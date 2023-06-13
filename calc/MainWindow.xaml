@@ -6,7 +6,127 @@
         xmlns:local="clr-namespace:calc"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="Black" Margin="0,0,699,290">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+        <Button
+            x:Name="ButtonAns"
+			Grid.Column="0"
+			Grid.Row="0"
+			Content="0"
+            Click="Button_Click" Margin="5,0,0,22" Grid.RowSpan="2" Foreground="White" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+
+        <Button
+            x:Name="ButtonAc"
+			Grid.Column="0"
+			Grid.Row="1"
+			Content="Ac"
+            Click="Button_Click" Margin="80,20,0,-3" RenderTransformOrigin="0.5,0.5" OpacityMask="{Binding ElementName=Button1, Mode=OneWay}" Foreground="#FFF9F9F9" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Name="ButtonSub"
+            Grid.Row="1"
+            Content="-"
+            Click="Button_Click" Margin="80,48,0,-30" RenderTransformOrigin="-6.403,2.426" BorderBrush="Black" Foreground="#FFFDFDFD">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF0303" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Name="Button9"
+            Grid.Row="1"
+            Content="9"
+            Click="Button_Click" Margin="55,48,25,-30" RenderTransformOrigin="-6.403,2.426" BorderBrush="Black" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Name="Button8"
+            Grid.Row="1"
+            Content="8"
+            Click="Button_Click" Margin="31,48,48,-30" RenderTransformOrigin="-6.403,2.426" Foreground="White" BorderBrush="Black">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Name="Button7"
+            Grid.Row="1"
+            Content="7"
+            Click="Button_Click" Margin="5,48,75,-30" RenderTransformOrigin="-6.403,2.426" BorderBrush="Black" Foreground="White">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+            x:Name="ButtonAdd"
+            Grid.Row="1"
+            Content="+"
+            Click="Button_Click" Margin="80,75,0,-57" RenderTransformOrigin="-6.403,2.426" BorderBrush="Black" Foreground="#FFFDFDFD">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF0303" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+                x:Name="Button11"
+                Content="6"
+                Click="Button_Click" RenderTransformOrigin="-6.403,2.426" BorderBrush="Black" Foreground="#FFFDFDFD" Margin="55,73,25,-57" Grid.Row="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF0303" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Button
+                x:Name="Button10"
+                Content="-"
+                Click="Button_Click" RenderTransformOrigin="-6.403,2.426" BorderBrush="Black" Foreground="#FFFDFDFD" Margin="31,73,49,-57" Grid.Row="1">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black"/>
+                    <GradientStop Color="#FFFF0303" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
